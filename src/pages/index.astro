@@ -1,6 +1,5 @@
 ---
-const title = 'Joba Tea'
-const description = 'Job search tracker with clear next steps.'
+import { title, description, keywords } from '../metadata'
 ---
 
 <html lang="en">
@@ -10,6 +9,7 @@ const description = 'Job search tracker with clear next steps.'
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<style>
@@ -165,8 +165,9 @@ const description = 'Job search tracker with clear next steps.'
 			<main class="stack">
 				<div class="hero">
 					<h1>
-						Do the hard parts of applying with
-						<span class="highlight">Joba Tea</span>.
+						Don’t lose the thread.
+						<span class="highlight">Joba Tea</span>
+						keeps every opportunity alive.
 					</h1>
 					<p class="description">
 						Organize every email, call, and follow‑up in one calm timeline. Get clear

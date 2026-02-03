@@ -1,7 +1,5 @@
 ---
-const title = 'Joba Tea'
-const description =
-  'Know what to do next in your job search. Interviews, follow-ups, and prep tasks in one calm, clear system.'
+import { title, description, keywords } from '../metadata'
 ---
 
 <html lang="en">
@@ -11,6 +9,7 @@ const description =
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<style>
